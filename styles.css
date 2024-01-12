@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+}
+
+#crucigrama {
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    grid-template-rows: repeat(5, 40px);
+    grid-gap: 5px;
+    margin: 20px auto;
+}
+
+#crucigrama div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+#crucigrama div.black {
+    background-color: #000;
+    color: #fff;
+}
+
+#crucigrama div.horizontal {
+    border-bottom: 3px solid #3498db;
+}
+
+#crucigrama div.vertical {
+    border-right: 3px solid #3498db;
+}
